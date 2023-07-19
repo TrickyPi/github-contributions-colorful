@@ -1,0 +1,17 @@
+{
+  "name": "Github contributions colorful",
+  "description": "customize your lovely color for the Github contributions",
+  "manifest_version": 3,
+  "version": "1.0",
+  "permissions": ["scripting", "storage"],
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://github.com/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/index.html"
+  }
+}
