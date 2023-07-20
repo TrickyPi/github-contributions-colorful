@@ -5,6 +5,8 @@ export interface Colors {
   l4: string;
 }
 
+export type ColorsKeys = keyof Colors;
+
 export type PresetKeys = "green" | "winter" | "halloween";
 
 const presetColors: Record<PresetKeys, Colors> = {

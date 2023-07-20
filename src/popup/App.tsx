@@ -2,10 +2,8 @@ import { Radio, Button, ColorPicker, message } from "antd";
 import { useState, type PropsWithChildren, useEffect } from "react";
 import presetColors, {
   type PresetKeys,
-  type Colors,
+  type ColorsKeys,
 } from "../share/presetColors";
-
-type ColorKeys = keyof Colors;
 
 const presets = Object.keys(presetColors) as Array<PresetKeys>;
 
@@ -52,7 +50,7 @@ export default function App() {
     setColor(presetColors[value]);
   }
 
-  function handleColorChange(key: ColorKeys, value: string) {
+  function handleColorChange(key: ColorsKeys, value: string) {
     setColor({
       ...color,
       [key]: value,
@@ -90,7 +88,7 @@ export default function App() {
           ))}
         </Radio.Group>
       </Item>
-      {(Object.entries(color) as Array<[ColorKeys, string]>).map(
+      {(Object.entries(color) as Array<[ColorsKeys, string]>).map(
         ([key, value]) => {
           return (
             <Item>

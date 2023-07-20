@@ -8,7 +8,7 @@
     {
       "js": ["scripts/content.js"],
       "matches": ["https://github.com/*"],
-      "run_at": "document_end"
+      "run_at": "document_start"
     }
   ],
   "action": {
