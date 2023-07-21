@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "vite build --minify false -w",
-    "build": "vite build"
+    "build": "vite build",
+    "pack": "npm run build && rm dist.zip && zip -r dist.zip dist"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

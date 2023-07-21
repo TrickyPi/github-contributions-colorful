@@ -96,7 +96,14 @@ export default function App() {
               <ColorPicker
                 value={value}
                 showText
+                arrow={false}
                 style={{ marginLeft: 50 }}
+                styles={{
+                  popup: {
+                    left: "50%",
+                    top: "50%",
+                  },
+                }}
                 onChange={(value) => {
                   handleColorChange(key, value.toHexString());
                 }}

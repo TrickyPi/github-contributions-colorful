@@ -51,6 +51,10 @@ export default defineConfig({
           src: "manifest.json",
           dest: "dist/",
         },
+        {
+          src: "images/icons/",
+          dest: "dist/",
+        },
       ],
       hook: "writeBundle",
     }),
