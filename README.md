@@ -9,12 +9,8 @@ Github Contributions Colorful is a chrome extension for customizing the color of
 
 ## How to use
 
-Install it from chrome extensions and click its extension button to open a modal, the modal likes the following.
+[Click it to install this extension from chrome web store](https://chrome.google.com/webstore/detail/github-contributions-colo/fffjipkehlhimpfkhepackkddfpilcen). After installing, click its extension button to open a modal, the modal likes the following.
 
 ![modal](./images/modal.png)
 
 you can choose the preset or use L1 ~ L4 that is more flexible.
-
-## Notice
-
-This chrome extension is pending review.

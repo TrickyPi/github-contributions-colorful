@@ -94,16 +94,10 @@ export default function App() {
             <Item>
               <Label>{key.toUpperCase()}</Label>
               <ColorPicker
-                value={value}
                 showText
+                value={value}
                 arrow={false}
                 style={{ marginLeft: 50 }}
-                styles={{
-                  popup: {
-                    left: "50%",
-                    top: "50%",
-                  },
-                }}
                 onChange={(value) => {
                   handleColorChange(key, value.toHexString());
                 }}
