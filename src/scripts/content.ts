@@ -16,9 +16,6 @@ function addListener(
   document.addEventListener("DOMContentLoaded", () => {
     const YEARLY_CONTRIBUTIONS_SELECT_NAME =
       YEARLY_CONTRIBUTIONS_SELECT.slice(1);
-
-    const config = { childList: true, subtree: true };
-
     const callback: MutationCallback = (mutationList) => {
       for (const mutation of mutationList) {
         if (mutation.type === "childList") {
@@ -31,7 +28,8 @@ function addListener(
             if (className?.includes("contribution-activity-listing")) {
               cbForProgress(node);
             }
-            if (node.parentNode === domContainer) {
+            let hightLight = node.querySelector(HIGHLIGHT_BLOB_SELECT);
+            if (hightLight) {
               cbForHighlightBlob(node.querySelector(HIGHLIGHT_BLOB_SELECT));
               cbForProgress(node);
             }
@@ -41,10 +39,9 @@ function addListener(
     };
 
     const observer = new MutationObserver(callback);
-
-    const domContainer = document.querySelector(USER_PROFILE_FRAME_SELECT);
+    const domContainer = document.body;
     if (domContainer) {
-      observer.observe(domContainer, config);
+      observer.observe(domContainer, { childList: true, subtree: true });
       cbForHighlightBlob(domContainer.querySelector(HIGHLIGHT_BLOB_SELECT));
       cbForProgress(domContainer);
     }
