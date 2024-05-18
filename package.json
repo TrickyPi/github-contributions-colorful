@@ -7,7 +7,7 @@
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "antd": "^5.7.0",
+    "antd": "^5.17.2",
     "chrome-types": "^0.1.216",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
