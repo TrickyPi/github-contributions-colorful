@@ -10,7 +10,7 @@
   "devDependencies": {
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
-    "antd": "^5.17.2",
+    "antd": "^5.17.3",
     "chrome-types": "^0.1.283",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
