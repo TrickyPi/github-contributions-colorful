@@ -1,4 +1,7 @@
 {
+  "name": "github-contributions-colorful",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite build --minify false -w",
     "build": "vite build",

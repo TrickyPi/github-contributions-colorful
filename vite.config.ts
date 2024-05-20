@@ -19,6 +19,9 @@ export default defineConfig({
           }
         },
       },
+      onwarn: (warning) => {
+        if (warning.code === "MODULE_LEVEL_DIRECTIVE") return;
+      },
     },
   },
   plugins: [
