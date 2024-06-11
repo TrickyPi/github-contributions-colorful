@@ -14,7 +14,7 @@
     "chrome-types": "^0.1.287",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-copy": "^3.5.0",
     "vite": "^5.2.13"
   }
 }
