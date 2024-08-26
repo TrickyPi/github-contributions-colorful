@@ -8,7 +8,7 @@
     "pack": "npm run build && rm dist.zip && zip -r dist.zip dist"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "antd": "^5.19.3",
     "chrome-types": "^0.1.295",
