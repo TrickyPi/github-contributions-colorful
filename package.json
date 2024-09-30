@@ -11,7 +11,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "antd": "^5.19.3",
-    "chrome-types": "^0.1.295",
+    "chrome-types": "^0.1.307",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "rollup-plugin-copy": "^3.5.0",
