@@ -50,7 +50,7 @@ function addListener(
 
 function setCssVariableColor({ l1, l2, l3, l4 }: Colors) {
   const style = document.createElement("style");
-  const styleText = `${USER_PROFILE_FRAME_SELECT} {--color-calendar-graph-day-L1-bg: ${l1};--color-calendar-graph-day-L2-bg: ${l2};--color-calendar-graph-day-L3-bg: ${l3};--color-calendar-graph-day-L4-bg: ${l4};}`;
+  const styleText = `${USER_PROFILE_FRAME_SELECT} {--contribution-default-bgColor-1: ${l1};--contribution-default-bgColor-2: ${l2};--contribution-default-bgColor-3: ${l3};--contribution-default-bgColor-4: ${l4};}`;
   style.innerText = styleText;
   document.head.append(style);
 }
